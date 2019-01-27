@@ -1,0 +1,20 @@
+doctype html
+html(lang='zh-hant')
+    head
+        title 模擬計算器
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+
+        //- css 設定
+        link(rel="stylesheet", href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/3.0.0/pretty-checkbox.min.css')
+        link(rel='stylesheet', href='./css/main.css')
+        block css
+
+        //- js 設定
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        script(src='./js/main.min.js')
+        block js
+
+    body
+        block content
