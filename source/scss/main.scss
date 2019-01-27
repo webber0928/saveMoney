@@ -1,270 +1,270 @@
-.wrapping {
-    display: grid;
-    grid-template-columns: 1fr 334px 1fr;
-    grid-template-rows: 56px 48px calc(100vh - 196px) 80px;
-    grid-row-gap: 4px;
-    /* position: relative; */
-}
-.header {
-    grid-column: 1 / -1;
-    grid-row: 1 / span 1;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff;
-    background-image: linear-gradient(to top, #0679E2, #334CE4);
-    text-align: center;
-    line-height: 56px;
-}
-.header a{
-    text-decoration: none;
-    color: #ffffff;
-}
-.options {
-    grid-column: 2 / -2;
-    grid-row: 2 / span 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 4px;
-    margin-top: 4px;
-}
-.options_button {
-    font-size: 1.2rem;
-    background-color: #f4f4f4;
-    color: #9b9b9b;
-    text-align: center;
-    line-height: 48px;
-    box-shadow: 0 0 5px 0 rgba(155, 155, 155, 0.5);
-}
-.merchant_options {
-    grid-column: 2 / -2;
-    grid-row: 2 / span 1;
-}
-.select-style {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    /* width: 336px; */
-    border-radius: 3px;
-    overflow: hidden;
-    background-color: #fff;
-    background: #fff;
-}
-.select-style select {
-    margin-left: 12px;
-    font-size: 1rem;
-    color: #777777;
-    width: 100%;
-    border: none;
-    box-shadow: none;
-    background-color: transparent;
-    background-image: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-            appearance: none;
-}
-.select-style select:focus {
-    outline: none;
-}
-.select-style:after {
-    position: absolute;
-    content: "";
-    top: 20px;
-    right: 24px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #777777 transparent transparent transparent;
-}
-select{
-    cursor: pointer;
-}
-.merchant_options {
-    /* border: solid 0.9px rgba(0, 0, 0, 0.12); */
-    display: grid;
-    line-height: 48px;
-}
-.merchant_options > div {
-    font-size: 1rem;
-    color: #777777;
-    text-align: center;
-    align-self: center;
-    justify-self: start;
-    margin-left: 16px;
-}
+// .wrapping {
+//     display: grid;
+//     grid-template-columns: 1fr 334px 1fr;
+//     grid-template-rows: 56px 48px calc(100vh - 196px) 80px;
+//     grid-row-gap: 4px;
+//     /* position: relative; */
+// }
+// .header {
+//     grid-column: 1 / -1;
+//     grid-row: 1 / span 1;
+//     font-size: 1.5rem;
+//     font-weight: bold;
+//     color: #ffffff;
+//     background-image: linear-gradient(to top, #0679E2, #334CE4);
+//     text-align: center;
+//     line-height: 56px;
+// }
+// .header a{
+//     text-decoration: none;
+//     color: #ffffff;
+// }
+// .options {
+//     grid-column: 2 / -2;
+//     grid-row: 2 / span 1;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-template-rows: 1fr;
+//     grid-column-gap: 4px;
+//     margin-top: 4px;
+// }
+// .options_button {
+//     font-size: 1.2rem;
+//     background-color: #f4f4f4;
+//     color: #9b9b9b;
+//     text-align: center;
+//     line-height: 48px;
+//     box-shadow: 0 0 5px 0 rgba(155, 155, 155, 0.5);
+// }
+// .merchant_options {
+//     grid-column: 2 / -2;
+//     grid-row: 2 / span 1;
+// }
+// .select-style {
+//     position: relative;
+//     padding: 0;
+//     margin: 0;
+//     /* width: 336px; */
+//     border-radius: 3px;
+//     overflow: hidden;
+//     background-color: #fff;
+//     background: #fff;
+// }
+// .select-style select {
+//     margin-left: 12px;
+//     font-size: 1rem;
+//     color: #777777;
+//     width: 100%;
+//     border: none;
+//     box-shadow: none;
+//     background-color: transparent;
+//     background-image: none;
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//             appearance: none;
+// }
+// .select-style select:focus {
+//     outline: none;
+// }
+// .select-style:after {
+//     position: absolute;
+//     content: "";
+//     top: 20px;
+//     right: 24px;
+//     width: 0;
+//     height: 0;
+//     border: 6px solid transparent;
+//     border-color: #777777 transparent transparent transparent;
+// }
+// select{
+//     cursor: pointer;
+// }
+// .merchant_options {
+//     /* border: solid 0.9px rgba(0, 0, 0, 0.12); */
+//     display: grid;
+//     line-height: 48px;
+// }
+// .merchant_options > div {
+//     font-size: 1rem;
+//     color: #777777;
+//     text-align: center;
+//     align-self: center;
+//     justify-self: start;
+//     margin-left: 16px;
+// }
 
-.container {
-    grid-column: 2 / -2;
-    grid-row: 3 / span 1;
-    display: flex;
-    flex-flow: column;
-    overflow: scroll;
-    padding: 0 4px;
-    margin-top: 4px;
-}
-.stepOne {
-    order: 1;
-}
-.stepTwo {
-    order: 2;
-}
-.stepThree {
-    order: 3;
-}
-.clothed {
-    margin-top: 12px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40px auto;
-}
-.card-title {
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 40px;
-    color: #ffffff;
-    background-color: #ffb466;
-    border-radius: 5px 5px 0 0;
-    padding-left: 16px;
-}
-.card-content{
-    padding: 16px 16px 0 16px;
-}
-.stepOne-content{
-    display: flex;
-    flex-flow: row;
-    align-items: flex-end;
-}
-.card-description {
-    font-size: 0.8rem;
-    font-weight: 300;
-    line-height: 1.71;
-    color: #9b9b9b;
-}
-.input-money {
-    width: 140px;
-    height: 49px;
-    border-radius: 10px;
-    margin: 0 8px;
-    box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.5);
-    border: solid 0.5px rgba(155, 155, 155, 0.5);
-    background-color: rgba(244, 244, 244, 0.37);
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 0.75;
-    text-align: center;
-    color: #d0021b;
-}
-.font-big {
-    font-size: 1.125rem;
-}
-.stepTwo_checkbox-block {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat( 5 , 1fr );
-}
-.stepThree_checkbox-block {}
-.checkbox-block {
-    margin-top: 16px;
-}
-.footer {
-    grid-column: 1 / -1;
-    grid-row: 4 / span 1;
-    box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
-    /* position: absolute; */
-    display: grid;
-    justify-items: center;
-    z-index: 1;
-}
-.button-counting{
-    position: relative;
-    align-self: center;
-    width: 246px;
-    height: 48px;
-    line-height: 48px;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    color: #ffffff;
-    border-radius: 60px;
-    background-color: #d2691d;
-    cursor: pointer;
-}
-.button-counting::after{
-    position: absolute;
-    content: '';
-    bottom: -4px;
-    right: 0px;
-    width: 246px;
-    height: 48px;
-    border-radius: 60px;
-    background-color: #a65317;
-    z-index: -1;
-}
+// .container {
+//     grid-column: 2 / -2;
+//     grid-row: 3 / span 1;
+//     display: flex;
+//     flex-flow: column;
+//     overflow: scroll;
+//     padding: 0 4px;
+//     margin-top: 4px;
+// }
+// .stepOne {
+//     order: 1;
+// }
+// .stepTwo {
+//     order: 2;
+// }
+// .stepThree {
+//     order: 3;
+// }
+// .clothed {
+//     margin-top: 12px;
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: 40px auto;
+// }
+// .card-title {
+//     font-size: 1rem;
+//     font-weight: 500;
+//     line-height: 40px;
+//     color: #ffffff;
+//     background-color: #ffb466;
+//     border-radius: 5px 5px 0 0;
+//     padding-left: 16px;
+// }
+// .card-content{
+//     padding: 16px 16px 0 16px;
+// }
+// .stepOne-content{
+//     display: flex;
+//     flex-flow: row;
+//     align-items: flex-end;
+// }
+// .card-description {
+//     font-size: 0.8rem;
+//     font-weight: 300;
+//     line-height: 1.71;
+//     color: #9b9b9b;
+// }
+// .input-money {
+//     width: 140px;
+//     height: 49px;
+//     border-radius: 10px;
+//     margin: 0 8px;
+//     box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.5);
+//     border: solid 0.5px rgba(155, 155, 155, 0.5);
+//     background-color: rgba(244, 244, 244, 0.37);
+//     font-size: 2rem;
+//     font-weight: 500;
+//     line-height: 0.75;
+//     text-align: center;
+//     color: #d0021b;
+// }
+// .font-big {
+//     font-size: 1.125rem;
+// }
+// .stepTwo_checkbox-block {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-template-rows: repeat( 5 , 1fr );
+// }
+// .stepThree_checkbox-block {}
+// .checkbox-block {
+//     margin-top: 16px;
+// }
+// .footer {
+//     grid-column: 1 / -1;
+//     grid-row: 4 / span 1;
+//     box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.2);
+//     background-color: #ffffff;
+//     /* position: absolute; */
+//     display: grid;
+//     justify-items: center;
+//     z-index: 1;
+// }
+// .button-counting{
+//     position: relative;
+//     align-self: center;
+//     width: 246px;
+//     height: 48px;
+//     line-height: 48px;
+//     font-size: 1rem;
+//     font-weight: 600;
+//     text-align: center;
+//     color: #ffffff;
+//     border-radius: 60px;
+//     background-color: #d2691d;
+//     cursor: pointer;
+// }
+// .button-counting::after{
+//     position: absolute;
+//     content: '';
+//     bottom: -4px;
+//     right: 0px;
+//     width: 246px;
+//     height: 48px;
+//     border-radius: 60px;
+//     background-color: #a65317;
+//     z-index: -1;
+// }
 
-@media screen and( max-width: 320px ){
-    .wrapping{
-        grid-template-columns: 1fr 300px 1fr;
-    }
-}
+// @media screen and( max-width: 320px ){
+//     .wrapping{
+//         grid-template-columns: 1fr 300px 1fr;
+//     }
+// }
 
-// ---------------
-.chekckBox {
-    position: relative;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    margin-bottom: 16px;
-}
-.modal_label{
-    cursor: pointer;
-    color: #9b9b9b;
-    padding-left: 24px;
-}
-.chekckBox input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    top: -2px;
-    left: 2px;
-}
-.checkmark {
-    position: absolute;
-    top: -2px;
-    left: 2px;
-    height: 16px;
-    width: 16px;
-    border-radius: 3px;
-    border: solid 1px #9b9b9b;
-}
-.chekckBox:hover input ~ .checkmark {
-    border: solid 1px #ccc;
-}
-.chekckBox input:checked ~ .checkmark{
-    border: solid 1px #00b9f5;
-    background-color: #00b9f5;
-}
-.chekckBox input:checked ~ .checkmark:after {
-    display: block;
-}
+// // ---------------
+// .chekckBox {
+//     position: relative;
+//     cursor: pointer;
+//     -webkit-user-select: none;
+//     -moz-user-select: none;
+//     -ms-user-select: none;
+//     user-select: none;
+//     margin-bottom: 16px;
+// }
+// .modal_label{
+//     cursor: pointer;
+//     color: #9b9b9b;
+//     padding-left: 24px;
+// }
+// .chekckBox input {
+//     position: absolute;
+//     opacity: 0;
+//     cursor: pointer;
+//     top: -2px;
+//     left: 2px;
+// }
+// .checkmark {
+//     position: absolute;
+//     top: -2px;
+//     left: 2px;
+//     height: 16px;
+//     width: 16px;
+//     border-radius: 3px;
+//     border: solid 1px #9b9b9b;
+// }
+// .chekckBox:hover input ~ .checkmark {
+//     border: solid 1px #ccc;
+// }
+// .chekckBox input:checked ~ .checkmark{
+//     border: solid 1px #00b9f5;
+//     background-color: #00b9f5;
+// }
+// .chekckBox input:checked ~ .checkmark:after {
+//     display: block;
+// }
 
-.chekckBox .checkmark:after {
-    left: 4px;
-    top: 0px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
+// .chekckBox .checkmark:after {
+//     left: 4px;
+//     top: 0px;
+//     width: 5px;
+//     height: 10px;
+//     border: solid white;
+//     border-width: 0 2px 2px 0;
+//     -webkit-transform: rotate(45deg);
+//     -ms-transform: rotate(45deg);
+//     transform: rotate(45deg);
+// }
 
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
+// /* Create the checkmark/indicator (hidden when not checked) */
+// .checkmark:after {
+//     content: "";
+//     position: absolute;
+//     display: none;
+// }

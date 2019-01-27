@@ -1,20 +1,19 @@
 extends ./partials/_layout
 
 block content
-    .wrapping
-        .header 還有些沒買到優惠攻略計算器
-        .merchant_options.select-style
-            select#merchant_select
-                option(value="PCHOME") PCHOME
+    .wrapping(style="padding:50px")
+        h2 計算器
+        h3 PCHOME
+        hr
         .container
             .stepOne.clothed
-                .card-title step1：輸入購買金額
+                h2 step1：輸入購買金額
                 .card-content.stepOne-content
                     .card-description 請輸入欲購物之金額
                     input.input-money(type="number" pattern="[0-9]*")
-                    .card-description.font-big 元
+                    | 元
             .stepTwo.clothed
-                .card-title step2：選擇銀行
+                h2 step2：選擇銀行
                 .card-content.stepTwo-content
                     .card-description 請選擇所擁有的信用卡之發卡銀行（*可複選
                     .stepTwo_checkbox-block.checkbox-block
@@ -34,7 +33,7 @@ block content
                                 .state.p-success
                                     label 華南銀行
             .stepThree.clothed
-                .card-title step3：選擇信用卡
+                h2 step3：選擇信用卡
                 .card-content.stepThree-content
                     .card-description 請選擇擁有的信用卡（*可複選）
                     .stepThree_checkbox-block.checkbox-block
@@ -54,4 +53,5 @@ block content
                                 .state.p-success
                                     label 台北富邦 數位生活卡
         .footer
-            .button-counting 計算折扣金額
+            hr
+            button 計算折扣金額
